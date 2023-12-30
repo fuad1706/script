@@ -248,12 +248,143 @@ else{
 }
 */
 
-document.getElementById("myButton").onclick = function(){
+// check property
+
+/*document.getElementById("myButton").onclick = function(){
+
+    const myCheckBox = document.getElementById("myCheckBox");
+    const visaBtn = document.getElementById("visaBtn");
+    const mastercardBtn = document.getElementById("mastercardBtn");
+    const paypalBtn = document.getElementById("paypalBtn");
+
     if(document.getElementById("myCheckBox").checked){
         console.log("You have subscribed !");
     }
 
     else{
-        console.log("You are not subscribed!")
+        console.log("You are not subscribed!");
+    }
+
+    if(visaBtn.checked){
+        console.log("You are paying with Visa!");
+    }
+
+    else if(mastercardBtn.checked){
+        console.log("You are paying with Mastercard");
+    }
+
+    else if(paypalBtn.checked){
+        console.log("You are paying with Paypal");
+    }
+
+    else{
+        console.log("You must select a payment type");
     }
 }
+*/
+
+// switch statement
+
+/*let grade = "";
+
+switch(grade){
+    case "A":
+        console.log("You did great!");
+        break;
+    case "B":
+        console.log("You did good!");
+        break;
+    case "C":
+        console.log("You did Okay");
+        break;
+    case "D":
+        console.log("You passed .... barely");
+        break;
+    case "F":
+        console.log("You Failed!");
+        break;
+    default:
+        console.log(grade, "is not a letter grade!");
+    
+}
+*/
+
+// GIves us the ability to check more than 1 condition concurrently
+// && and (BOTH conditions must be true)
+// || OR (Either condition can be true)
+
+/*let temp = 0;
+let sunny = false;
+
+if(temp > 0 && temp < 30 && sunny){
+    console.log('The weather is good!');
+}
+else{
+    console.log('The weather is bad!');
+}
+*/
+
+
+/*let temp = 50;
+
+if(temp <= 0 || temp >= 30){
+    console.log('The weather is bad!');
+}
+
+else{
+    console.log('The weather is good!');
+}
+*/
+
+// ! NOT logical operator
+// typically used to reverse a condition's boolean value 
+// true -> false false -> true
+
+/*let temp = 15;
+let sunny = false;
+
+if (!(temp > 0)){
+    console.log("It's cold outside");
+}
+
+else{
+    console.log("It's warm outside");
+}
+
+if(!sunny){
+    console.log("It's cloudy outside");
+}
+
+else{
+    console.log("It's sunny outside");
+}
+*/
+
+// while loop
+
+/*let userName = "";
+
+while(userName == "" || userName == null){
+    userName = window.prompt("Enter your name");
+}
+
+console.log("Hello", userName);
+*/
+
+// do while loop = do soemthing, then check the condition, repeat if condition is true
+
+/*let userName;
+
+do{
+    userName = window.prompt("Enter your name");
+}while(userName == "")
+
+console.log("Hello", userName);*/
+
+// for loop = repeat some code a certain amount of times
+
+for(let i = 10; i > 0; i-=1){
+    console.log(i);
+}
+
+console.log("HAPPY NEW YEAR");
